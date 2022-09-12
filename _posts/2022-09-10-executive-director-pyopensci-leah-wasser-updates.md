@@ -53,7 +53,7 @@ open peer review process and Python open science skills. Diversity is important 
 * Provide training and mentorship in skills needed to contribute to open source. These skills are not just for open source. They are also fundamental to good open science practices and will support career trajectories in open science too. 
 * Grow support for maintainers. A critical component of this effort will be a communication campaign around the importance of open source to science. 
 
-## We will also continue to curate our partnership with the Journal of Open Source Software (JOSS). 
+### We will also continue to curate our partnership with the Journal of Open Source Software (JOSS). 
 Package maintainers can still submit a package to us if they wish to publish with 
 JOSS. Our partnership supports a "fast track" review in JOSS if its functionality 
 fits their scope and requirements. Once a package is accepted by pyOpenSci , if 
@@ -61,7 +61,7 @@ the package fits into the JOSS scope our review will count towards JOSS. A packa
 author then only needs to write a paper for JOSS, and they will be "dual"
 published with us and JOSS. This, friends, is a win-win!
 
-## Who do we serve?
+## Who does pyOpenSci serve?
 pyOpenSci supports maintainers of smaller scientific python open source projects. 
 We also support scientists using these tools and will empower folks like you 
 with the skills needed to both contribute to Open Source and improve your open 
@@ -85,7 +85,8 @@ value support from some of you along the way!
 There are many ways to stay in touch with our project. Once I have a road map 
 for activities developed, I will communicate this here on our 
 [website](https://www.pyopensci.org/), Twitter 
-and discourse. So be sure to follow [@pyOpenSci on Twitter](https://www.twitter.com/pyopensci). 
+and [discourse](https://pyopensci.discourse.group/). Discourse is full open
+You can sign up for it using your GitHub account if you wish. So be sure to follow [@pyOpenSci on Twitter](https://www.twitter.com/pyopensci). 
 
 ## What can you do now?
 There are a few ways to get involved with us now.
@@ -110,7 +111,7 @@ who's names I am missing on meeting notes. Feel free to reach out and ask for
 corrections as needed!  Max Joseph, Jenny Palomino, Kylen Solvik, Chris Holdgraf, 
 Paige Bailey, Luiz Irber,
 Arfon Smith, Leonardo Uieda, Filipe Fernandes, Carson Farmer, Neil Chue Hong,
-Joe Hamman, Ryan Abernathy, Lindsey Heagy, Noam Ross, Karthik Ram, Martin Skarzynski,
+Joe Hamman, Ryan Abernathy, Lindsey Heagy, Mike Trizna, Noam Ross, Karthik Ram, Martin Skarzynski,
 Levi Wolf, Daniel Chen, Ivan Ogsawara, David Nicholson, Tania Allard, 
 Kirstie Whitaker, Sander van Rijn, Philip Meier, Moritz Lurig ... and so many 
 more!
