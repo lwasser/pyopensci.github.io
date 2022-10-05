@@ -1,0 +1,104 @@
+{% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        {% unless logo_path == empty %}
+          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        {% endunless %}
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.masthead_title | default: site.title }}
+          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+        </a>
+
+        <div class="topnav" id="myTopnav">
+            {%- for alink in site.data.navigation.main -%}
+                {% if alink.sub-nav %}
+                <div class="dropdown">
+                    <button class="dropbtn">{{ alink.title }} 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        {% for subnav in alink.sub-nav %}
+                        <a href="{{ subnav.url }}" class="masthead__menu-item">{{ subnav.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% else %}
+                <a href="{{ alink.url | relative_url }}">{{ alink.title }}</a>
+                {% endif %}
+            {% endfor %}
+            <!--this adds the hamburger but i'd like to do this differently-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <!-- <ul class="visible-links">
+            {%- for link in site.data.navigation.main -%}
+              <li class="masthead__menu-item">
+                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>  -->
+        
+
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
+        {% endif %}
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- do i need this in the footer or header somehow?-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+
+
+        
+        <!-- <ul class="visible-links">
+          {%- for link in site.data.navigation.main -%}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul> -->
+
+<!-- <div class="topnav" id="myTopnav">
+            {%- for link in site.data.navigation.main -%}
+                {% if link.sub-nav %}
+                    <a href="{{ link.url | relative_url }}" class="active">{{ link.title }}</a>
+                    <div class="dropdown">
+                    <button class="dropbtn">{{ link.title }} 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        {% for subnav in link.sub-nav %}
+                            <a href="#">{{ subnav.title }}} 1</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+              {% else %}
+                 <a href="{{ link.url | relative_url }}" class="active">{{ link.title }}</a>
+              {% endfor %}
+            </div> 
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>  -->

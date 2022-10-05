@@ -2,6 +2,13 @@
 main:
   - title: "Peer Review & Packages"
     url: /python-packages/
+    sub-nav:
+      - title: "Our Packages"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "pyopensci.org" 
+      - title: "About peer review"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "pyopensci.org" 
   - title: "Blog"
     url: /blog/
   - title: "Resources"
