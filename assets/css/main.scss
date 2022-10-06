@@ -17,6 +17,36 @@ body {font-size:90%}
 }
 
 /* Top nav drop down styles*/
+// hover underline fun!
+
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-color;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+  -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+  transform: scaleX(0) translate3d(0, 0, 0); // hide
+}
+
+.hover-underline:hover:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); // reveal
+}
+
 
  /* Add a black background color to the top navigation */
  .topnav {
@@ -114,26 +144,6 @@ first one ("Home"). Show the link that contains should open and close the topnav
   }
 }
 
-// add hover effect - removing for now until i figure out how to constrain it
-// .topnav a:before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   height: 4px;
-//   background: $primary-color;
-//   width: 100%;
-//   -webkit-transition: $global-transition;
-//   transition: $global-transition;
-//   -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-//   transform: scaleX(0) translate3d(0, 0, 0); // hide
-// }
-
-// .topnav a:hover:before {
-//   -webkit-transform: scaleX(1);
-//   -ms-transform: scaleX(1);
-//   transform: scaleX(1); // reveal
-// }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
