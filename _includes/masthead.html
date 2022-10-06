@@ -13,34 +13,25 @@
         </a>
 
         <div class="topnav" id="myTopnav">
-            {%- for alink in site.data.navigation.main -%}
+          {%- for alink in site.data.navigation.main -%}
                 {% if alink.sub-nav %}
                 <div class="dropdown">
-                    <button class="dropbtn">{{ alink.title }} 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        {% for subnav in alink.sub-nav %}
-                        <a href="{{ subnav.url }}" class="masthead__menu-item">{{ subnav.title }}</a>
-                        {% endfor %}
-                    </div>
+                  <button class="dropbtn">{{ alink.title }}
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    {% for subnav in alink.sub-nav %}
+                    <a href="{{ subnav.url }}" class="masthead__menu-item">{{ subnav.title }}</a>
+                    {% endfor %}
+                  </div>
                 </div>
                 {% else %}
                 <a href="{{ alink.url | relative_url }}">{{ alink.title }}</a>
                 {% endif %}
-            {% endfor %}
-            <!--this adds the hamburger but i'd like to do this differently-->
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+          {% endfor %}
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
 
-        <!-- <ul class="visible-links">
-            {%- for link in site.data.navigation.main -%}
-              <li class="masthead__menu-item">
-                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-              </li>
-            {%- endfor -%}
-          </ul>  -->
-        
+        </div> 
 
         {% if site.search == true %}
         <button class="search__toggle" type="button">
@@ -70,35 +61,3 @@
     }
 </script>
 
-
-
-        
-        <!-- <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul> -->
-
-<!-- <div class="topnav" id="myTopnav">
-            {%- for link in site.data.navigation.main -%}
-                {% if link.sub-nav %}
-                    <a href="{{ link.url | relative_url }}" class="active">{{ link.title }}</a>
-                    <div class="dropdown">
-                    <button class="dropbtn">{{ link.title }} 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        {% for subnav in link.sub-nav %}
-                            <a href="#">{{ subnav.title }}} 1</a>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-              {% else %}
-                 <a href="{{ link.url | relative_url }}" class="active">{{ link.title }}</a>
-              {% endfor %}
-            </div> 
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>  -->

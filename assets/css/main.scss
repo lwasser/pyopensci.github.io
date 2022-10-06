@@ -2,8 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$border-color: #000;
+$border-color: #ccc;
 $intro-transition: intro 0.3s both !default;
+$primary-color: #ccc;
+$nav-font-color: rgb(95, 91, 91)!important;
+$global-transition: all 0.2s ease-in-out !default;
 
 body {font-size:90%}
 
@@ -15,96 +18,92 @@ body {font-size:90%}
 
 /* Top nav drop down styles*/
 
-.topnav {
+ /* Add a black background color to the top navigation */
+ .topnav {
+  // background-color: #333;
   overflow: hidden;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
+  color: $nav-font-color;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
+/* Add an active class to highlight the current page */
 .active {
-  // background-color: #2e04aa;
-  // color: white;
+  background-color: #04AA6D;
+  color: white;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
+/* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
+/* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
+  // font-size: 17px;
   border: none;
   outline: none;
+  color: $nav-font-color;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
+/* Style the dropdown content (hidden by default) */
 .dropdown-content {
-  background-color:#fff;
   display: none;
   position: absolute;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
+/* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  // color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
+/* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  position: relative;
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-  z-index: 20;
+  // background-color: #ccc;
+  // color: #fff;
 }
 
-.dropdown-content:hover {
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-  z-index: 20;
-}
+/* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-  // color: rgb(154, 21, 21);
-  // background-color: none!important;
-  border-bottom: 1px solid $border-color;
-  position:relative;
-  // border-bottom:1px solid #000;
-  // -webkit-animation: $intro-transition;
-  // animation: $intro-transition;
-  // -webkit-animation-delay: 0.15s;
-  // animation-delay:0.15s;
-  // z-index:20
-
+  background-color: #fff;
+  color: rgb(57, 51, 51);
 }
 
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+/* When the screen is less than 600 pixels wide, hide all links, except for the 
+first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -114,9 +113,33 @@ body {font-size:90%}
   }
 }
 
+// add hover effect - removing for now until i figure out how to constrain it
+// .topnav a:before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   height: 4px;
+//   background: $primary-color;
+//   width: 100%;
+//   -webkit-transition: $global-transition;
+//   transition: $global-transition;
+//   -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+//   transform: scaleX(0) translate3d(0, 0, 0); // hide
+// }
+
+// .topnav a:hover:before {
+//   -webkit-transform: scaleX(1);
+//   -ms-transform: scaleX(1);
+//   transform: scaleX(1); // reveal
+// }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .topnav.responsive a.icon {
+    font-size:3em;
     position: absolute;
     right: 0;
     top: 0;
@@ -133,7 +156,7 @@ body {font-size:90%}
     width: 100%;
     text-align: left;
   }
-}
+} 
 
 /* package cards splash */
 
