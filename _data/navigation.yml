@@ -5,10 +5,10 @@ main:
     sub-nav:
       - title: "Our Packages"
         icon: "fas fa-fw fa-envelope-square"
-        url: "pyopensci.org" 
+        url: "/python-packages/" 
       - title: "About peer review"
         icon: "fas fa-fw fa-envelope-square"
-        url: "pyopensci.org" 
+        url: "/python-packages/" 
   - title: "Blog"
     url: /blog/
   - title: "Resources"

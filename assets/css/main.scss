@@ -5,7 +5,7 @@
 $border-color: #ccc;
 $intro-transition: intro 0.3s both !default;
 $primary-color: #ccc;
-$nav-font-color: rgb(95, 91, 91)!important;
+$nav-font-color: #6f777d!important;
 $global-transition: all 0.2s ease-in-out !default;
 
 body {font-size:90%}
@@ -62,6 +62,7 @@ body {font-size:90%}
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  font-family: inherit;
 }
 
 /* Style the dropdown content (hidden by default) */
