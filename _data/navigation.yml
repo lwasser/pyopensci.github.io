@@ -15,5 +15,12 @@ main:
     url: /resources/
   - title: "Our Community"
     url: /our-community/
+    sub-nav:
+      - title: "Our Packages"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "/python-packages/" 
+      - title: "About peer review"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "/python-packages/" 
   - title: "Get In Touch"
     url: /get-involved-contact/

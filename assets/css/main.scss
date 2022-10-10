@@ -5,7 +5,8 @@
 $border-color: #ccc;
 $intro-transition: intro 0.3s both !default;
 $primary-color: #ccc;
-$nav-font-color: #6f777d!important;
+$nav-font-color: #535a60; //#535a60!important;
+$nav-hover-color: #8d0065;
 $global-transition: all 0.2s ease-in-out !default;
 
 body {font-size:90%}
@@ -13,12 +14,10 @@ body {font-size:90%}
 .contrib_org {font-weight:normal;
   font-size:70%!important;
   margin-bottom: 0!important;
-
 }
 
 /* Top nav drop down styles*/
 // hover underline fun!
-
 
 .hover-underline {
   display: inline-block;
@@ -47,10 +46,8 @@ body {font-size:90%}
   transform: scaleX(1); // reveal
 }
 
-
  /* Add a black background color to the top navigation */
  .topnav {
-  // background-color: #333;
   overflow: hidden;
 }
 
@@ -58,12 +55,26 @@ body {font-size:90%}
 .topnav a {
   float: left;
   display: block;
-  color: $nav-font-color;
+  color: $nav-font-color!important;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: $global-transition;
 }
+
+.topnav a:hover {
+  color: $nav-hover-color!important;
+ }
+
+ .greedy-nav a {
+  color: $nav-font-color!important;
+  transition: $global-transition;
+ }
+
+ .greedy-nav a:hover {
+  color: $nav-hover-color!important;
+ }
 
 /* Add an active class to highlight the current page */
 .active {
@@ -96,14 +107,19 @@ body {font-size:90%}
 }
 
 /* Style the dropdown content (hidden by default) */
+// removing transition as it's messing with hamburger
 .dropdown-content {
   display: none;
+  // opacity: 0; /* here */
   position: absolute;
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  // transition: all 0.25s ease-in; /* transition here */
+  // transform: translateY(-10px); /* Transition here */
 }
+
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
@@ -124,12 +140,14 @@ body {font-size:90%}
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #fff;
-  color: rgb(57, 51, 51);
+  color: $nav-hover-color;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
+  // transform: translateY(0); /* here */
+  // opacity: 1; /* here */
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the 
@@ -147,10 +165,13 @@ first one ("Home"). Show the link that contains should open and close the topnav
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+// ok i think i need to adjust this section to accomodate the m mistakes header where this sites
+// it probably works fine outside of that header.
+// so maybe i need to look at how he created his hamburger 
 @media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    font-size:3em;
+    font-size:2em;
     position: absolute;
     right: 0;
     top: 0;
