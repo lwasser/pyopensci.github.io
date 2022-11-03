@@ -25,7 +25,7 @@ having issues with hamburger placement - it's somehow moving to the bottom not s
               {% if alink.sub-nav %}
               <!-- If there is sub nav to display -->
              <li class="dropdown">
-                <button class="dropbtn">{{ alink.title }} <span class="downBtn">&#x25BC;</span>
+                <button class="dropbtn">{{ alink.title }} <i class="fas fa-caret-down"></i>
                 </button>
                 <ul class="dropdown-content">
                   {% for subnav in alink.sub-nav %}
@@ -66,29 +66,31 @@ having issues with hamburger placement - it's somehow moving to the bottom not s
   </div>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
-$(document).ready(function() {
-  $('.dropdown').click(function(e) {
+  $(document).ready(function () {
+  $(".hamburger__btn-toggle").click(function (e) {
+    $(this).toggleClass("close");
+    e.preventDefault();
+    $(".nav__links").toggleClass("vertical");
+  });
+  
+  $(".dropdown").click(function (e) {
     e.stopPropagation();
     e.preventDefault();
-    $(".dropdown-content").removeClass("open");
-    $(this).find('.dropdown-content').toggleClass('open')
+    // close when click outside
+    $(this).find(".dropdown-content").toggleClass("open");
+    $(this).siblings(".dropdown").find(".dropdown-content").removeClass("open");
   });
-    // Close dropdown when u click outside of the nav ul
-    $(document).click(function(e){
-      if(!e.target.closest("ul") && $(".dropdown-content").hasClass("open")){
-        $(".dropdown-content").removeClass("open");
+
+  // Close dropdown when u click outside of the nav ul
+  $(document).click(function (e) {
+    if (!e.target.closest("ul") && $(".dropdown-content").hasClass("open")) {
+      $(".dropdown-content").removeClass("open");
     }
-  })
-});
-
-$(document).ready(function() {
-  $('.hamburger__btn-toggle').click(function(e){
-    $(this).find('.hamburger__btn-toggle').toggleClass('close')
   });
 });
-
 
 </script>
 
