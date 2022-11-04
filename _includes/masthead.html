@@ -17,7 +17,7 @@
               {% if alink.sub-nav %}
               <!-- If there is sub nav to display -->
              <li class="dropdown">
-                <button class="dropbtn">{{ alink.title }} <i class="fas fa-caret-down"></i>
+                <button class="dropbtn" tabindex="0">{{ alink.title }} <i class="fas fa-caret-down"></i>
                 </button>
                 <ul class="dropdown-content">
                   {% for subnav in alink.sub-nav %}
@@ -33,7 +33,19 @@
               </li>
               {% endif %}
         {% endfor %}
+        <li>
+          
+      </li>
       </ul> 
+      {% if site.search == true %}
+          <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
+      {% endif %}
+      
+      
+      <ul class="hidden-links hidden"></ul>
         <!-- Burger button  - span class for screen readers-->
         <button class="hamburger__btn-toggle" type="button" count="1">
           <span class="visually-hidden">Toggle menu</span> <!--screen readers-->
@@ -42,19 +54,8 @@
       </nav>
       </div>
     </div> 
-  </div> 
-</div> 
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
-        {% endif %}
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
   </div>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
@@ -66,8 +67,8 @@
   });
   
   $(".dropdown").click(function (e) {
-    e.stopPropagation();
-    e.preventDefault();
+    //e.stopPropagation();
+    //e.preventDefault();
     // close when click outside
     $(this).find(".dropdown-content").toggleClass("open");
     $(this).siblings(".dropdown").find(".dropdown-content").removeClass("open");

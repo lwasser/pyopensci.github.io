@@ -480,7 +480,6 @@ first one ("Home"). Show the link that contains should open and close the nav__l
 
   burger__icon, burger__icon::before, burger__icon::after {
     display: block;
-    
   }
 
   /* Hide horizontal drop down links at 48em / 768px */
@@ -535,6 +534,13 @@ first one ("Home"). Show the link that contains should open and close the nav__l
       width: 100%;
       text-align: left;
     }
+  }
+  /* position search toggle by burger */
+  .search__toggle {
+    position: fixed;
+    right: 8%;
+    font-size: 1.4em;
+    top: 5%;
   }
 } 
 
