@@ -25,7 +25,7 @@
     - errdapy
     - pandera
     - nbless
-    - PyGMT
+    - pygmt
     - pyrolite
   packages_submitted:
     - earthpy
@@ -195,11 +195,11 @@
     -
   packages_reviewed:
     - pandera
-    - MovingPandas
+    - movingpandas
   packages_editor:
     - sevivi
-    - Jointly
-    - Devicely
+    - jointly
+    - devicely
   location: Earth
   email: ivan.ogasawara@gmail.com
 - name: Filipe
@@ -224,7 +224,7 @@
   packages_submitted:
     - errdapy
   packages_reviewed:
-    - Nbless
+    - nbless
   packages_editor:
     - afscgap
   location: Florianópolis, SC
@@ -403,7 +403,7 @@
     - spatial-remote-sensing
     - database
   packages_editor:
-    - MovingPandas
+    - movingpandas
   packages_submitted:
     - earthpy
   packages_reviewed:
@@ -426,7 +426,7 @@
   packages_submitted:
     -
   packages_reviewed:
-    - PyGMT
+    - pygmt
   packages_editor:
     -
   twitter:
@@ -486,9 +486,9 @@
   packages_submitted:
     -
   packages_reviewed:
-    - Pynteny
+    - pynteny
   packages_editor:
-    - Xclim
+    - xclim
   twitter:
   location:
   email: alexandre.batisse@hey.com
@@ -600,7 +600,7 @@
   packages_submitted:
     -
   packages_reviewed:
-    - Nbless
+    - nbless
   packages_editor:
     -
   twitter:
@@ -619,7 +619,7 @@
     - submitting-author
     - maintainer
   packages_submitted:
-    - Nbless
+    - nbless
   packages_reviewed:
     -
   packages_editor:
@@ -965,7 +965,7 @@
   packages_submitted:
     -
   packages_reviewed:
-    - Jointly
+    - jointly
   packages_editor:
     -
   twitter:
@@ -1002,7 +1002,7 @@
   packages_submitted:
     -
   packages_reviewed:
-    - PyGMT
+    - pygmt
   packages_editor:
     -
   twitter: JuliusBusecke
@@ -1294,7 +1294,7 @@
     - reviewer
   packages_submitted:
   packages_reviewed:
-    - Devicely
+    - devicely
   location: San Diego
   organization: Willing Consulting
   email: carolcode@willingconsulting.com
@@ -1631,7 +1631,7 @@
     - maintainer
   packages_editor:
   packages_submitted:
-    - Jointly
+    - jointly
   packages_reviewed:
   location:
   email:
@@ -1653,7 +1653,7 @@
   packages_editor:
   packages_submitted:
   packages_reviewed:
-    - Devicely
+    - devicely
   location: Tuebingen, Germany
   email:
 - name: Boas Pucker
@@ -1675,7 +1675,7 @@
   packages_editor:
   packages_submitted:
   packages_reviewed:
-    - Physcraper
+    - physcraper
   location: Germany
   email:
 - name: Leonardo de Oliveira Martins
@@ -1696,7 +1696,7 @@
   packages_editor:
   packages_submitted:
   packages_reviewed:
-    - Physcraper
+    - physcraper
   location: Norwich, UK
   email: Leonardo.de-Oliveira-Martins@quadram.ac.uk
 - name: Soumith Chintala
@@ -1841,7 +1841,7 @@
     - maintainer
   packages_editor:
   packages_submitted:
-    - PyGMT
+    - pygmt
   packages_reviewed:
   location: Wellington
   email:
@@ -1941,7 +1941,7 @@
     - submitting-author
     - maintainer
   packages_submitted:
-    - Pynteny
+    - pynteny
   packages_reviewed:
   location: Atlantic Ocean
   organization: ULL
@@ -2005,7 +2005,7 @@
   packages_editor:
   packages_submitted:
   packages_reviewed:
-    - Pynteny
+    - pynteny
   location:
   email:
 - name: Tom Russell
