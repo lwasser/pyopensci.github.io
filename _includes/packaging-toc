@@ -1,0 +1,12 @@
+1. [What is a python package ](/tutorials/about-python-packages.html)
+1. [Create dev envt](/tutorials/create-development-environment.html)
+1. [Step 1 in package creation - make your code installable ](/tutorials/make-installable-python-package.html)
+1. [Step 2 - Add metadata using a pyproject toml file ](/python-package-tutorial/pyproject-toml.html)
+1. [Step 3 - build publish your package on PyPI](/python-package-tutorial/build-publish-pypi.html)
+1. [Step 4 - publish your package on conda/conda-forge](/python-package-tutorial/build-publish-pypi.html)
+1. [Step 5 Create a release workflow using dynamic versioning]()
+
+FUTURE
+
+1. Step 6 - add & publish docs
+1. Step 7 - add tests
