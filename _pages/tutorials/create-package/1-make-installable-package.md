@@ -208,7 +208,7 @@ The TOML format consists of tables and variables. Tables are sections of informa
 
 `[this-is-a-table]`.
 
-Tables can contain variables within them defined by an variable name and  
+Tables can contain variables within them defined by an variable name and
 an `=` sign. For
 instance, a `build-system` table most often holds 2 variables:
 
