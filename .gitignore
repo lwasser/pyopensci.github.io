@@ -11,4 +11,4 @@ all_contribs.pickle
 styles/*
 tmp/*
 .bundle
-.ipynb_checkpoints/
+**/.ipynb_checkpoints/

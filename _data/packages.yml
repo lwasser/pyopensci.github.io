@@ -1,3 +1,49 @@
+- package_name: pooltool
+  package_description: Pooltool is a general purpose billiards simulator crafted
+      specifically for science and engineering.
+  submitting_author:
+      name: Evan Kiefl
+      github_username: ekiefl
+  all_current_maintainers:
+    - name: Evan Kiefl
+      github_username: ekiefl
+  repository_link: https://github.com/ekiefl/pooltool
+  version_submitted: v0.3.3
+  categories:
+    - data-processing-munging
+    - data-visualization
+  editor:
+      name: Chiara Marmo
+      github_username: cmarmo
+  eic:
+  reviewers:
+    - name: Sebastiano Tronto
+      github_username: sebastianotronto
+    - name: Eliot Robson
+      github_username: eliotwrobson
+  archive: '[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13824503.svg)](https://doi.org/10.5281/zenodo.13824503)'
+  version_accepted: 0.4.1
+  date_accepted: '2024-09-16'
+  created_at: 2024-04-15 21:44:43+00:00
+  updated_at: 2024-09-29 19:21:18+00:00
+  closed_at:
+  issue_link: https://github.com/pyOpenSci/software-submission/issues/173
+  joss:
+  partners:
+  gh_meta:
+      name: pooltool
+      description: A sandbox billiards game that emphasizes realistic physics
+      created_at: '2020-04-09'
+      stargazers_count: 182
+      watchers_count: 182
+      open_issues_count: 8
+      forks_count: 31
+      documentation: https://pooltool.readthedocs.io
+      contrib_count: 5
+      last_commit: '2024-09-29'
+  labels:
+    - 6/pyOS-approved
+    - 9/joss-approved
 - package_name: martini
   package_description: MARTINI is a modular package for the creation of synthetic
       resolved HI line observations (data cubes) of smoothed-particle hydrodynamics
@@ -37,13 +83,13 @@
       description: Mock spatially resolved spectral line observations of simulated
           galaxies.
       created_at: '2017-10-19'
-      stargazers_count: 14
-      watchers_count: 14
+      stargazers_count: 15
+      watchers_count: 15
       open_issues_count: 13
-      forks_count: 3
+      forks_count: 4
       documentation: https://martini.readthedocs.io/
       contrib_count: 1
-      last_commit: '2024-08-01'
+      last_commit: '2024-09-28'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -92,10 +138,10 @@
       stargazers_count: 11
       watchers_count: 11
       open_issues_count: 1
-      forks_count: 5
+      forks_count: 6
       documentation: https://cosmoglobe.github.io/zodipy/
-      contrib_count: 7
-      last_commit: '2024-08-05'
+      contrib_count: 8
+      last_commit: '2024-09-27'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -136,13 +182,13 @@
       description: Standardize, clean, and wrangle Water Quality Portal data into
           more analytic-ready formats
       created_at: '2022-06-27'
-      stargazers_count: 12
-      watchers_count: 12
+      stargazers_count: 13
+      watchers_count: 13
       open_issues_count: 20
       forks_count: 5
       documentation: https://usepa.github.io/harmonize-wq/
-      contrib_count: 4
-      last_commit: '2024-08-21'
+      contrib_count: 5
+      last_commit: '2024-09-05'
   labels:
     - 6/pyOS-approved
 - package_name: xnemogcm
@@ -183,11 +229,11 @@
       created_at: '2020-01-24'
       stargazers_count: 21
       watchers_count: 21
-      open_issues_count: 11
-      forks_count: 9
+      open_issues_count: 1
+      forks_count: 10
       documentation: https://xnemogcm.readthedocs.io/
-      contrib_count: 5
-      last_commit: '2024-04-15'
+      contrib_count: 6
+      last_commit: '2024-09-11'
   labels:
     - 6/pyOS-approved
 - package_name: automata
@@ -234,10 +280,10 @@
       description: A Python library for simulating finite automata, pushdown automata,
           and Turing machines
       created_at: '2016-02-16'
-      stargazers_count: 333
-      watchers_count: 333
-      open_issues_count: 10
-      forks_count: 63
+      stargazers_count: 340
+      watchers_count: 340
+      open_issues_count: 8
+      forks_count: 65
       documentation: https://caleb531.github.io/automata/
       contrib_count: 16
       last_commit: '2024-06-29'
@@ -278,13 +324,13 @@
       name: sleplet
       description: Slepian Scale-Discretised Wavelets in Python
       created_at: '2020-10-21'
-      stargazers_count: 6
-      watchers_count: 6
+      stargazers_count: 7
+      watchers_count: 7
       open_issues_count: 4
       forks_count: 1
       documentation: https://pypi.org/project/sleplet
       contrib_count: 5
-      last_commit: '2024-08-08'
+      last_commit: '2024-09-27'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -349,13 +395,13 @@
       name: sunpy
       description: SunPy - Python for Solar Physics
       created_at: '2011-08-06'
-      stargazers_count: 905
-      watchers_count: 905
-      open_issues_count: 290
-      forks_count: 582
+      stargazers_count: 911
+      watchers_count: 911
+      open_issues_count: 285
+      forks_count: 585
       documentation: https://www.sunpy.org
       contrib_count: 30
-      last_commit: '2024-08-28'
+      last_commit: '2024-09-30'
   labels:
     - 6/pyOS-approved
 - package_name: ncompare
@@ -396,8 +442,8 @@
       created_at: '2023-08-17'
       stargazers_count: 25
       watchers_count: 25
-      open_issues_count: 7
-      forks_count: 8
+      open_issues_count: 8
+      forks_count: 9
       documentation: https://ncompare.readthedocs.io
       contrib_count: 5
       last_commit: '2024-07-10'
@@ -438,9 +484,9 @@
       name: rdata
       description: Reader of R datasets in .rda format, in Python
       created_at: '2018-07-02'
-      stargazers_count: 44
-      watchers_count: 44
-      open_issues_count: 6
+      stargazers_count: 45
+      watchers_count: 45
+      open_issues_count: 8
       forks_count: 2
       documentation: https://rdata.readthedocs.io
       contrib_count: 2
@@ -482,13 +528,13 @@
       name: EOmaps
       description: A library to create interactive maps of geographical datasets
       created_at: '2021-09-27'
-      stargazers_count: 332
-      watchers_count: 332
-      open_issues_count: 20
+      stargazers_count: 337
+      watchers_count: 337
+      open_issues_count: 16
       forks_count: 25
       documentation: https://eomaps.readthedocs.io/
-      contrib_count: 6
-      last_commit: '2024-08-26'
+      contrib_count: 8
+      last_commit: '2024-09-01'
   labels:
     - 6/pyOS-approved
 - package_name: sourmash
@@ -532,13 +578,13 @@
       description: Quickly search, compare, and analyze genomic and metagenomic
           data sets.
       created_at: '2016-04-09'
-      stargazers_count: 464
-      watchers_count: 464
-      open_issues_count: 718
-      forks_count: 78
+      stargazers_count: 470
+      watchers_count: 470
+      open_issues_count: 720
+      forks_count: 80
       documentation: https://sourmash.readthedocs.io/en/latest/
       contrib_count: 30
-      last_commit: '2024-08-27'
+      last_commit: '2024-09-30'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -622,13 +668,13 @@
       name: astartes
       description: Better Data Splits for Machine Learning
       created_at: '2022-04-22'
-      stargazers_count: 54
-      watchers_count: 54
-      open_issues_count: 5
+      stargazers_count: 58
+      watchers_count: 58
+      open_issues_count: 6
       forks_count: 2
       documentation: https://jacksonburns.github.io/astartes/
       contrib_count: 3
-      last_commit: '2024-08-14'
+      last_commit: '2024-09-25'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -683,13 +729,13 @@
       description: CompleX Group Interactions (XGI) is a Python package for higher-order
           networks.
       created_at: '2021-09-08'
-      stargazers_count: 176
-      watchers_count: 176
+      stargazers_count: 179
+      watchers_count: 179
       open_issues_count: 52
-      forks_count: 27
+      forks_count: 28
       documentation: https://xgi.readthedocs.io
       contrib_count: 14
-      last_commit: '2024-08-30'
+      last_commit: '2024-09-16'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -735,13 +781,13 @@
       name: biocypher
       description: A unifying framework for biomedical research knowledge graphs
       created_at: '2021-09-10'
-      stargazers_count: 209
-      watchers_count: 209
-      open_issues_count: 162
+      stargazers_count: 214
+      watchers_count: 214
+      open_issues_count: 159
       forks_count: 30
       documentation: https://biocypher.org
-      contrib_count: 14
-      last_commit: '2024-08-27'
+      contrib_count: 15
+      last_commit: '2024-09-24'
   labels:
     - 6/pyOS-approved
 - package_name: cardsort
@@ -781,8 +827,8 @@
       description: A python package to analyse cardsorting data from kardsort.com
           outputs.
       created_at: '2023-03-16'
-      stargazers_count: 7
-      watchers_count: 7
+      stargazers_count: 8
+      watchers_count: 8
       open_issues_count: 1
       forks_count: 1
       documentation: https://cardsort.readthedocs.io
@@ -973,8 +1019,8 @@
       description: 'Python library for GraphBLAS: high-performance sparse linear
           algebra for scalable graph analytics'
       created_at: '2019-11-11'
-      stargazers_count: 121
-      watchers_count: 121
+      stargazers_count: 122
+      watchers_count: 122
       open_issues_count: 58
       forks_count: 14
       documentation: https://python-graphblas.readthedocs.io/en/stable/
@@ -1023,13 +1069,13 @@
       description: 'Library of derived climate variables, ie climate indicators,
           based on xarray. '
       created_at: '2018-07-27'
-      stargazers_count: 318
-      watchers_count: 318
-      open_issues_count: 69
-      forks_count: 55
+      stargazers_count: 323
+      watchers_count: 323
+      open_issues_count: 70
+      forks_count: 57
       documentation: https://xclim.readthedocs.io/en/stable/
       contrib_count: 30
-      last_commit: '2024-08-28'
+      last_commit: '2024-09-27'
   labels:
     - 6/pyOS-approved
     - 9/joss-approved
@@ -1222,13 +1268,13 @@
       name: pygmt
       description: A Python interface for the Generic Mapping Tools.
       created_at: '2017-03-17'
-      stargazers_count: 744
-      watchers_count: 744
-      open_issues_count: 199
-      forks_count: 215
+      stargazers_count: 750
+      watchers_count: 750
+      open_issues_count: 183
+      forks_count: 217
       documentation: https://www.pygmt.org
       contrib_count: 30
-      last_commit: '2024-08-29'
+      last_commit: '2024-09-30'
   labels:
     - 6/pyOS-approved
 - package_name: Devicely
@@ -1364,8 +1410,8 @@
       description: Welcome to Physcraper’s repository! Automatic gene tree updating
           using the Open Tree of Life.
       created_at: '2015-08-24'
-      stargazers_count: 12
-      watchers_count: 12
+      stargazers_count: 13
+      watchers_count: 13
       open_issues_count: 36
       forks_count: 6
       documentation: https://physcraper.readthedocs.io/en/main/
@@ -1407,8 +1453,8 @@
       name: pystiche
       description: Framework for Neural Style Transfer (NST) built upon PyTorch
       created_at: '2019-09-16'
-      stargazers_count: 267
-      watchers_count: 267
+      stargazers_count: 269
+      watchers_count: 269
       open_issues_count: 15
       forks_count: 28
       documentation:
@@ -1458,7 +1504,7 @@
       forks_count: 4
       documentation: https://www.phenopype.org
       contrib_count: 1
-      last_commit: '2024-07-14'
+      last_commit: '2024-09-10'
   labels:
     - 6/pyOS-approved
 - package_name: pyrolite
@@ -1502,7 +1548,7 @@
       stargazers_count: 132
       watchers_count: 132
       open_issues_count: 15
-      forks_count: 34
+      forks_count: 36
       documentation: https://pyrolite.readthedocs.io
       contrib_count: 14
       last_commit: '2024-02-26'
@@ -1544,13 +1590,13 @@
       name: movingpandas
       description: Movement trajectory classes and functions built on top of GeoPandas
       created_at: '2018-12-16'
-      stargazers_count: 1193
-      watchers_count: 1193
+      stargazers_count: 1205
+      watchers_count: 1205
       open_issues_count: 43
-      forks_count: 192
+      forks_count: 193
       documentation: https://movingpandas.org
       contrib_count: 30
-      last_commit: '2024-08-27'
+      last_commit: '2024-09-28'
   labels:
     - 6/pyOS-approved
 - package_name: pandera
@@ -1590,13 +1636,13 @@
       description: A light-weight, flexible, and expressive statistical data testing
           library
       created_at: '2018-11-01'
-      stargazers_count: 3229
-      watchers_count: 3229
-      open_issues_count: 370
-      forks_count: 301
+      stargazers_count: 3286
+      watchers_count: 3286
+      open_issues_count: 375
+      forks_count: 307
       documentation: https://www.union.ai/pandera
       contrib_count: 30
-      last_commit: '2024-08-31'
+      last_commit: '2024-09-30'
   labels:
     - 6/pyOS-approved
 - package_name: Nbless
@@ -1689,10 +1735,10 @@
       description: A package built to support working with spatial data using open
           source python
       created_at: '2018-02-20'
-      stargazers_count: 494
-      watchers_count: 494
-      open_issues_count: 41
-      forks_count: 159
+      stargazers_count: 500
+      watchers_count: 500
+      open_issues_count: 42
+      forks_count: 160
       documentation: https://earthpy.readthedocs.io
       contrib_count: 29
       last_commit: '2023-08-23'
