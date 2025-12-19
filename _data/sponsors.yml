@@ -1,0 +1,8 @@
+# Sponsors data file
+# Add sponsors here in the following format:
+# - name: "Sponsor Name"
+#   url: "https://example.com"
+#   date_joined: "2025-01-15"
+#   logo: "/images/sponsors/logo.png"  # optional
+
+[]
