@@ -1,0 +1,8 @@
+---
+title: Old Get Involved redirect
+permalink: /get-involved.html
+redirect_to: /volunteer.html
+---
+
+Oops - looks like you're looking for our {{ page.title }}. Directing you
+to the right page now: <a href="{{ page.redirect_to }}"> {{ page.redirect_to }} </a>

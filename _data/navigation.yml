@@ -52,10 +52,14 @@ main:
       - title: "Handbook"
         icon: "fas fa-external-link-alt"
         url: "https://www.pyopensci.org/handbook/"
-  - title: "Get Involved"
+  - title: "Support"
     sub-nav:
       - title: "Volunteer"
         url: "/volunteer.html"
-      - title: "Donate"
-        icon: "fas fa-external-link-alt"
-        url: "https://fnd.us/pyopensci_2024"
+      - title: "Sponsor"
+        url: "/support/sponsor.html"
+      - title: "Membership"
+        url: "/support/membership.html"
+  - title: "Donate"
+    url: "https://fnd.us/pyopensci_2024"
+    is_button: true

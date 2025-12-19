@@ -1,11 +1,14 @@
 ---
 layout: splash
 classes: flowing
-title: "Get involved with pyOpenSci"
+title: "Volunteer with pyOpenSci"
 author_profile: false
 published: true
 site-map: true
 permalink: /volunteer.html
+redirect_from:
+  - /get-involved.html
+  - /support.html
 header:
   overlay_image: images/headers/pyopensci-learn-header.png
   overlay_filter: 0.3
